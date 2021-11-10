@@ -1,0 +1,231 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://works.vn/static/media/hcem.84fb8641.jpeg" type="image/gif" sizes="16x16"> 
+    <title>Nguyễn Công Tài - Thiết kế web 14</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    
+  </head>
+  <body>
+
+
+
+    <div class="container">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <h5 class="text-dark h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-light">
+        <div class="container-fluid justify-content-start">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="d-flex ms-2">
+            <input class="form-control me-2 border-0" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" hidden>Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Trang chủ</a></li>
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark">Đăng ký học trực tuyến</a></li>
+        </ol>
+      </nav>
+      <h1>Đăng ký học trực tuyến</h1>
+      <p>Hoàn thành hồ sơ đăng ký học với 3 bước </p>
+
+
+      <ul class="nav">
+        <li class="nav-item border-bottom border-primary">
+          <a class="nav-link text-danger" href="#">Bước 1: Thông tin cá nhân</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Bước 2: Nộp hồ sơ, giấy tờ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Bước 3: Nộp lệ phí xét tuyển</a>
+        </li>
+      </ul>
+
+      
+
+      <form action="" class="border border-light shadow-sm p-2">
+        <h2 class="my-1">Thông tin cá nhân</h2>
+        <div class="row mt-3">
+          <div class="form-group col-lg-4">
+            <label for="username" class="form-label">Họ và tên:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter name" name="name">
+          </div>
+
+          <div class="form-group col-lg-4">
+            <label for="dateofbirth" class="form-label">Ngày tháng năm sinh:</label>
+            <input type="date" class="form-control" id="dateofbirth" placeholder="" name="date">
+          </div>
+
+          <div class="form-group col-lg-4">
+            <label for="" class="form-label d-block">Giới tính:</label>
+            <div class="form-check d-inline-block">
+              <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+              <label class="form-check-label" for="radio1">Nam</label>
+            </div>
+            <div class="form-check d-inline-block">
+              <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+              <label class="form-check-label" for="radio2">Nữ</label>
+            </div> 
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="form-group col-lg-6">
+            <label for="phonenumber" class="form-label">Số điện thoại:</label>
+            <input type="text" class="form-control" id="phonenumber" placeholder="Enter phonenumber" name="phonenumber">
+          </div>
+
+          <div class="form-group col-lg-6">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+
+        </div>
+
+
+        <div class="row mt-3">
+          <div class="col-lg-4">
+            <label for="" class="form-select-label">Tỉnh/Thành phố</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn tỉnh thành phố</option>
+              <option value="1">Hà Nội</option>
+            </select>
+          </div>
+
+          <div class="col-lg-4">
+            <label for="" class="form-select-label">Quận/Huyện</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn Quận/Huyện</option>
+              <option value="1">Đan Phượng</option>
+            </select>
+          </div>
+
+          <div class="col-lg-4">
+            <label for="" class="form-select-label">Phường/Xã</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn Phường/Xã</option>
+              <option value="1">Tân Hội</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <div class="form-group">
+            <label for="" class="form-label">Địa chỉ:</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
+          </div>
+        </div>
+
+        <h2 class="my-3">Thông tin đăng ký học</h2>
+        <div class="row  mt-3">
+          <div class="col-lg-6">
+            <label for="" class="form-select-label">Trình độ văn hoá</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn Trình độ văn hoá</option>
+              <option value="1">THPT</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6">
+            <label for="" class="form-select-label">Loại hình đào tạo</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn Loại hình đào tạo</option>
+              <option value="1">Cao đẳng</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="row  mt-3 mb-3">
+          <div class="col-lg-3">
+            <label for="" class="form-select-label">Chương trình đào tạo</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn Chương trình đào tạo</option>
+              <option value="1">Đào tạo quốc tế</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3">
+            <label for="" class="form-select-label">Trình độ đào tạo</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn Trình độ đào tạo</option>
+              <option value="1">Cao đẳng</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3">
+            <label for="" class="form-select-label">Chuyên ngành</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn Chuyên ngành</option>
+              <option value="1">Thiết kế website</option>
+            </select>
+          </div>
+          <div class="col-lg-3">
+            <label for="" class="form-select-label"> Mã chuyên ngành</label>
+            <select class="form-select" aria-label="Default select example" disabled>
+
+              <option selected></option>
+            </select>
+          </div>
+        </div>
+
+        <h2 class="my-1">Thông tin bổ sung</h2>
+        <div class="row mt-3 mb-4">
+          <div class="col-lg-6">
+            <label for="" class="form-select-label">Bạn thuộc đối tượng ưu tiên gì?</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Không thuộc đối tượng nào</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6">
+            <label for="" class="form-select-label">Bạn biết đến HCEM qua kênh thông tin nào?</label>
+            <select class="form-select" aria-label="Default select example">
+
+              <option selected>Chọn nguồn giới thiệu</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-content-center my-lg-3">
+          <button type="submit" class="btn btn-danger">Gửi thông tin</button>
+        </div>
+      </form>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
